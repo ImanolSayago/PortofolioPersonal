@@ -1,0 +1,556 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #232f3f;
+    height: 60px;
+    position: fixed; /* Agrega esta línea para fijar el elemento */
+    top: 0; /* Asegura que esté pegado a la parte superior */
+    left: 0; /* Asegura que esté pegado al lado izquierdo */
+    width: 100%; /* Opcional: para que ocupe todo el ancho */
+    z-index: 1000; /* Opcional: para asegurar que esté por encima de otros elementos */
+  }
+
+nav #navegacion-cont ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav #navegacion-cont ul li
+{
+    margin: 20px;
+    list-style: none;
+}
+
+nav #navegacion-cont ul li a {
+  
+    color: #c1daff;
+    font-size: 1.5rem;
+    margin-right: 1.4rem;
+    transition: color 0.2s ease-in-out; 
+}
+
+nav #navegacion-cont ul li a:hover {
+    color: #919191;
+}
+
+
+
+nav #Logo-cont a:hover{
+    color: #919191;
+}
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(52, 62, 143, 0.7), rgba(44, 76, 136, 0.5)), url("../app/fondoHeader5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+header #info-principal{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header #info-principal .titulos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 500px;
+}
+header #info-principal h1{
+    
+    font-size: 7.5rem;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease-in-out
+}
+
+header #info-principal h1:hover{
+    transform: rotateX(180deg);
+}
+header #info-principal p
+{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+
+
+header #info-principal .titulos .flecha{
+    padding: 5px 5px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s ease-in-out; /* 0.1 segundos */
+}
+
+header #info-principal .titulos .flecha:hover{
+    transform: translateY(20px);
+}
+
+main{
+    height: 100vh;
+    background-color:#232f3f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+main div #imgperfil{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    height: 600px;
+    width: 30rem;
+    
+}
+
+main #info-personal {
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out; /* Agrega la transición */
+}
+
+main #info-personal:hover {
+    transform: translateY(-25px); /* Ajusta el valor para la elevación */
+}
+
+
+main #info-personal h2{
+    font-size: 6.5rem;
+    margin-bottom: 20px;
+    color: #c1daff;
+}
+
+main #info-personal p
+{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+#proyectos-cont{
+    background-color: #3f4957;
+    
+}
+
+ #proyectos-titulo{
+color: #c1daff;
+    text-align: center;
+    font-size: 6.5rem;
+    
+}
+
+#proyectos {
+    margin-top: -90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea columnas de al menos 300px de ancho */
+    gap: 20px; /* Espacio entre las cartas de proyecto */
+    padding: 20px; /* Espacio interno de la sección */
+    height: 100vh;
+    align-items: center;
+  
+}
+
+.carta-proyecto {
+
+    transition: transform 0.3s ease-in-out;
+    background-color: #232f3f;
+    border-radius:0px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 700px;
+    width: 420px;
+    box-shadow:5px 10px 15px black;
+   
+}
+
+.carta-proyecto:hover{
+    transform: translateY(-25px); /
+}
+
+.texto-carta{
+  
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#proyectos .carta-proyecto h2{
+    color: #c1daff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#proyectos .carta-proyecto p{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.carta-proyecto .img-carta{
+    width: 100%;
+    height: 30%;
+
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.carta-proyecto .btn-carta{
+    padding: 15px;
+    background-color: #3f4957;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    color: #c1daff;
+    
+}
+
+.btn-proyectos{
+    padding: 15px;
+    background-color:#232f3f;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: #c1daff;
+}
+#lenguajes{
+    height: 100vh;
+    background-color:#232f3f ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#lenguajes .cont-mas h2{
+    color: #c1daff;
+}
+
+#lenguajes .carta-lenguaje{
+    width: 700px;
+    height: 200px;
+    border: 1px solid rgb(102, 102, 102);
+    background-color: #3f4957;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.logo-lenguaje{
+    height: 50px;
+    width: 50px;
+}
+
+#achicar{
+    height: 40px;
+    width: 50px;
+}
+
+#achicar2{
+    height: 43px;
+}
+
+.cont-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cont-logo:hover{
+    transform: translateY(-25px); /
+}
+
+.cont-logo h4{
+    color: #c1daff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.cont-general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.cont-general h3{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.cont-mas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cont-mas h2{
+    font-size: 6.5rem;
+    color: white;
+    margin-bottom: 90px;
+}
+
+footer{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#3f4957;
+}
+
+footer #link-contacto{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 15px;
+    align-items: center;
+
+    
+}
+
+footer #link-contacto ul {
+    list-style: none;
+}
+
+footer #link-contacto ul li{
+    margin: 20px 0px;
+}
+
+footer #link-contacto ul li a{
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer #link-contacto ul li a:hover{
+    color: #c1daff;
+}
+
+
+footer #link-contacto h4{
+    font-size:3rem;
+    margin-bottom: 10px;
+    color: #c1daff;
+}
+
+
+footer #link-contacto ul li div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    
+}
+
+footer #link-contacto ul li div img 
+{
+    margin-right: 15px;
+}
+
+footer #contacto-directo{
+    padding: 15px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 400px;
+height: 300px;
+}
+
+footer #contacto-directo p
+{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer #contacto-directo a img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  
+    nav {
+      flex-direction: row;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      max-width: 100vw;
+      padding: 10px 0;
+    }
+
+  
+  
+    nav #navegacion-cont ul {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    nav #navegacion-cont ul li {
+      margin: 10px 0;
+    }
+  
+    nav #navegacion-cont ul li a{
+       font-size: 0.9rem;
+      }
+  
+    header {
+        max-width: 100vw;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    header #info-principal {
+      margin: 0;
+      padding: 20px;
+    }
+  
+    header #info-principal h1 {
+      font-size: 4rem;
+    }
+  
+    header #info-principal p {
+      font-size: 1.5rem;
+    }
+  
+    main {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
+    }
+  
+    main div #imgperfil {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  
+    main #info-personal {
+      width: 90%;
+    }
+  
+    main #info-personal h2 {
+      font-size: 3rem;
+    }
+  
+    main #info-personal p {
+      font-size: 1.1rem;
+    }
+  
+    #proyectos-cont h2{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    #proyectos {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center; /* Centra tanto horizontal como vertical */
+        height: auto;
+        margin-top: 0;
+      }
+  
+    .carta-proyecto {
+        
+      width: 90%;
+      height: auto;
+    }
+  
+    .texto-carta {
+      width: 100%;
+      height: auto;
+    }
+
+    #proyectos-cont #proyectos .carta-proyecto .texto-carta h2{
+        font-size: 1.5rem;
+    }
+
+    #proyectos-cont #proyectos .carta-proyecto .texto-carta p{
+        font-size: 1rem;
+    }
+
+    #proyectos-cont #proyectos .carta-proyecto div a{
+        font-size: 1rem;
+        padding: 5px;
+    }
+  
+    #lenguajes {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    #lenguajes .carta-lenguaje {
+      width: 90%;
+      flex-direction: column;
+      height: auto;
+      padding: 15px;
+      gap: 15px;
+    }
+  
+    .cont-mas h2 {
+      font-size: 3rem;
+      margin-bottom: -1px;
+    }
+
+    .cont-general h3{
+        font-size: 2.5rem;
+    }
+  
+    .cont-logo h4 {
+      font-size: 1.3rem;
+    }
+  
+    footer {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    footer #link-contacto,
+    footer #contacto-directo {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+  
+    footer #link-contacto ul li a,
+    footer #contacto-directo p {
+      font-size: 1.2rem;
+    }
+  }
+  
